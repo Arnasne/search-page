@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(240deg, rgb(21, 251, 255), rgb(120, 83, 223), rgb(193, 48, 198)90%);
+    padding: 0 30px;
+}
+
+/*      search      */
+
+.logo {
+    font-size: 5rem;
+    color: #eee;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.m:hover {
+    color: #72FFFF;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.first-o:hover {
+    color: #72FFFF;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.thund-o:hover {
+    color: #72FFFF;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.g:hover {
+    color: #72FFFF;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.l:hover {
+    color: #72FFFF;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.e:hover {
+    color: #72FFFF;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.search-container {
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+}
+
+.src-icon {
+    width: 16px;
+    position: relative;
+    left: 1.8rem;
+    z-index: 1;
+}
+
+#search-input {
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    width: 35rem;
+    min-width: 5.8rem;
+    transition: 0.2s;
+    color: #eee;
+    z-index: 2;
+    background: rgba(114, 255, 255, 0.1);
+    border: 1px solid rgba(114, 255, 255, 0.3);
+}
+
+input:hover {
+    background-color: #72FFFF;
+    box-shadow: 0rem 0rem 0.9rem 0.1rem #27fcf1;
+}
+
+input:focus {
+    outline: none;
+    background-color: #72FFFF;
+    box-shadow: 0rem 0rem 0.9rem 0.3rem #27fcf1;
+    color: #72FFFF;
+}
+
+::placeholder {
+    color: #72FFFF;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*      search buttons      */
+
+.search-btn {
+    padding: 0.4rem 0.9rem;
+    margin: 1.8rem 0.6rem;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #eee;
+    background: linear-gradient(180deg, rgba(238, 238, 238, 0.153), rgba(114, 255, 255, 0.1), rgba(238, 238, 238, 0.17));
+    border: 1px solid rgba(114, 255, 255, 0.3);
+    border-radius: 50px;
+    box-shadow:
+    0.8px 0.8px 0.3px rgba(0, 0, 0, 0.02),
+    2.2px 2.1px 1.7px rgba(0, 0, 0, 0.028),
+    4.4px 4.2px 5.1px rgba(0, 0, 0, 0.035),
+    7.5px 7.2px 12.2px rgba(0, 0, 0, 0.042),
+    12.4px 11.9px 27.3px rgba(0, 0, 0, 0.05),
+    26px 25px 82px rgba(0, 0, 0, 0.07);
+}
+
+.search-btn:hover {
+    background: rgba(114, 255, 255, 0.2);
+    box-shadow: 0rem 0rem 0.6rem 0.1rem #27fcf1;
+    color: #27fcf1;
+}
+
+.search-btn:active {
+    scale: 0.9;
+}
+
+.copyright {
+    text-align: center;
+    background-image: inherit;
+}
+
+/* media querie */
+
+@media (max-width: 601px) {
+    .logo {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 501px) {
+    .logo {
+        font-size: 3rem;
+    }
+
+    #search-input {
+        padding: 0.5rem 2.4rem;
+        font-size: 1rem;
+    }
+    
+    .search-btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.77rem;
+    }
+}
+
+@media (max-width: 331px) {
+    .logo {
+        font-size: 2.5rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .src-icon {
+        width: 0.8rem;
+        left: 1.4rem;
+    }
+
+    #search-input {
+        padding: 0.4rem 1.85rem;
+        font-size: 0.9rem;
+    }
+    
+    .search-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 281px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin-bottom: 1.3rem;
+    }
+
+    #search-input {
+        padding: 0.3rem 1.1rem;
+        font-size: 0.5rem;
+        width: 13rem;
+    }
+
+    .src-icon {
+        width: 0.4rem;
+        left: 0.8rem;
+    }
+
+    .search-btn {
+        padding: 0.2rem 0.4rem;
+        margin: 1rem 0.5rem;
+        font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 171px) 
+{
+    .container {
+        padding: 0 0.6rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .src-icon {
+        width: 0.3rem;
+        left: 0.6rem;
+    }
+
+    #search-input {
+        padding: 0.1rem 0.8rem;
+        font-size: 0.4rem;
+        width: 13rem;
+    }
+
+    .search-btn {
+        padding: 0.1rem 0.3rem;
+        margin: 0.5rem 0.5rem;
+        font-size: 0.3rem;
+    }
+}
